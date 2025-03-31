@@ -1,0 +1,36 @@
+{
+    "log_files": [
+      "/var/log/auth.log",
+      "/var/log/syslog",
+      "/var/log/application.log"
+    ],
+    "log_patterns": {
+      "failed_login": "Failed password for .* from .* port \\d+",
+      "system_error": "error|failed|failure",
+      "critical_service": "(nginx|apache|mysql|postgresql) .*(stopped|failed|crashed)",
+      "disk_space": "running out of disk space|disk space .* reached .* threshold",
+      "memory_usage": "out of memory|memory usage .* exceeded"
+    },
+    "alert_thresholds": {
+      "failed_login": 5,
+      "system_error": 10,
+      "critical_service": 1,
+      "disk_space": 1,
+      "memory_usage": 1
+    },
+    "email": {
+      "enabled": true,
+      "smtp_server": "smtp.example.com",
+      "smtp_port": 587,
+      "username": "alerts@example.com",
+      "password": "your_password",
+      "from_email": "alerts@example.com",
+      "to_email": "admin@example.com"
+    },
+    "slack": {
+      "enabled": true,
+      "webhook_url": "https://hooks.slack.com/services/YOUR/WEBHOOK/URL",
+      "channel": "#alerts"
+    },
+    "scan_interval": 60
+}

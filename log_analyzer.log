@@ -1,0 +1,17 @@
+2025-03-30 10:28:34,339 - LogAnalyzer - ERROR - Log file not found: /var/log/auth.log
+2025-03-30 10:28:34,339 - LogAnalyzer - ERROR - Log file not found: /var/log/syslog
+2025-03-30 10:28:34,339 - LogAnalyzer - ERROR - Log file not found: /var/log/application.log
+2025-03-30 10:28:34,339 - LogAnalyzer - INFO - Starting log analysis cycle
+2025-03-30 10:28:34,339 - LogAnalyzer - WARNING - Log file does not exist: /var/log/auth.log
+2025-03-30 10:28:34,339 - LogAnalyzer - WARNING - Log file does not exist: /var/log/syslog
+2025-03-30 10:28:34,339 - LogAnalyzer - WARNING - Log file does not exist: /var/log/application.log
+2025-03-30 10:28:34,339 - LogAnalyzer - INFO - Completed log analysis cycle
+2025-03-30 10:28:58,672 - LogAnalyzer - INFO - Log analyzer stopped by user
+2025-03-30 10:29:33,448 - LogAnalyzer - ERROR - Log file not found: /var/log/auth.log
+2025-03-30 10:29:33,448 - LogAnalyzer - ERROR - Log file not found: /var/log/syslog
+2025-03-30 10:29:33,448 - LogAnalyzer - ERROR - Log file not found: /var/log/application.log
+2025-03-30 10:29:33,448 - LogAnalyzer - INFO - Starting log analysis cycle
+2025-03-30 10:29:33,448 - LogAnalyzer - WARNING - Log file does not exist: /var/log/auth.log
+2025-03-30 10:29:33,448 - LogAnalyzer - WARNING - Log file does not exist: /var/log/syslog
+2025-03-30 10:29:33,448 - LogAnalyzer - WARNING - Log file does not exist: /var/log/application.log
+2025-03-30 10:29:33,448 - LogAnalyzer - INFO - Completed log analysis cycle
