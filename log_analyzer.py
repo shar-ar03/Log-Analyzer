@@ -2,7 +2,6 @@ import os
 import re
 import time
 import smtplib
-import threading
 import argparse
 import logging
 import json
