@@ -22,7 +22,8 @@ logger = logging.getLogger('LogAnalyzer')
 
 class LogAnalyzer:
     def __init__(self, config_path='config.json'):
-        """Initialize the Log Analyzer with configuration settings."""
+        #Initialize the Log Analyzer with configuration settings from the json file as dictionary format to loop through in the script.
+        
         self.config = self._load_config(config_path)
         self.log_patterns = self.config['log_patterns']
         self.email_config = self.config['email']
@@ -46,7 +47,7 @@ class LogAnalyzer:
                 self.last_position[log_file] = 0
     
     def _load_config(self, config_path):
-        """Load configuration from JSON file."""
+        #Load configuration from JSON file. In case not found .json hardcode one to avoid script changes.
         try:
             with open(config_path, 'r') as f:
                 return json.load(f)
